@@ -1,0 +1,14 @@
+
+.main{
+    height:100vh;
+    width:100vw;
+}
+.formik{
+    background-color: blue;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:98vh;
+    width:100vw;
+    flex-direction: column;
+}

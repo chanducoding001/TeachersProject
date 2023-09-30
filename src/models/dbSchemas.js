@@ -16,11 +16,39 @@ const teachers = sequelize.define("teachers",{
         type:DataTypes.STRING(255),
         allowNull:false,
     },
-    mobile:{
+    email:{
+        type:DataTypes.STRING(255),
+        allowNull:false,
+    },
+    qualification:{
+        type:DataTypes.STRING(255),
+        allowNull:false,
+    },
+    subjects:{
+        type:DataTypes.STRING(255),
+        allowNull:false,
+    },
+    classes:{
+        type:DataTypes.STRING(255),
+        allowNull:false,
+    },
+    section:{
+        type:DataTypes.STRING(255),
+        allowNull:false,
+    },
+   phone:{
         type:DataTypes.BIGINT,
         allowNull:false,
     },
-    email:{
+   secondPhone:{
+        type:DataTypes.BIGINT,
+        allowNull:false,
+    },
+    gender:{
+        type:DataTypes.STRING(255),
+        allowNull:false,
+    },
+    address:{
         type:DataTypes.STRING(255),
         allowNull:false,
     },

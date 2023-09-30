@@ -1,11 +1,14 @@
 
 const express = require("express");
 const app = express();
+const cors = require('cors')
 app.use(express.json());
 
 const getRouter = require("./routes/testRoutes");
 const teachersRoute = require("./routes/teachersRoutes");
 const sequelize = require("./db/config");
+
+app.use(cors())
 
 app.use("/", getRouter);
 app.use("/", teachersRoute);
